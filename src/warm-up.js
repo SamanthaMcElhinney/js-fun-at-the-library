@@ -53,7 +53,7 @@ var isShortStory = pages < 25
 // 'Ok, maybe I could read that in a day and a half'
 
 if (pages < 1000) {
-    console.log('I could read that in a day!);
+    console.log('I could read that in a day!')
 } else {
     console.log('Ok, maybe I could read that in a day and a half');
 }
@@ -75,18 +75,20 @@ if (isFavorite === true) {
 // Create a new variable "books" and assign it to an Array of 5 different
 // book titles, represented by their names as Strings.
 
-var books = ['Lessons in Chemistry', 'Cats Run the World', 'Am I Okay?', 'Coding Nightmares', 'Pigeons Unite'']
+var books = ['Lessons in Chemistry', 'Cats Run the World', 'Am I Okay?', 'Coding Nightmares', 'Pigeons Unite']
 
 // Write the code to access the 3rd element of the Array, using bracket
 // notation.
-
+console.log(books[2])
 
 // Create a new variable "belowTwoHundred" and assign it to an Array of 12
 // different numbers below two hundred.
 
+var belowTwoHundred = [150, 20, 3, 5, 50, 6, 9, 22, 44, 33, 50, 77, 80]
 
 // Write the code to access the 5th element of the array, using bracket notation.
 
+console.log(belowTwoHundred[4]) 
 
 //------------------------- Objects -------------------------//
 
@@ -94,6 +96,11 @@ var books = ['Lessons in Chemistry', 'Cats Run the World', 'Am I Okay?', 'Coding
 // keys: name, and hasThesaurus. The value for name should the string 'Webster's', and
 // the value for hasThesaurus should be false
 
-
+var dictionary = {
+    name: 'Websters',
+    hasThesaurus: false
+}
 // Write the code to add the key of pageCount, with the value of 720. Use dot
 // notation to do this. DO NOT modify your code from above.
+
+dictionary.pageCount = 500;
