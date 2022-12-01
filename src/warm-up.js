@@ -42,7 +42,8 @@ var isFavorite = false
 // variable should be true, otherwise it should be false. You MUST use a
 // comparison operator.
 
-var isShortStory <= false
+var isShortStory = pages < 25
+
 
 //------------------------- Conditionals -------------------------//
 
@@ -51,14 +52,22 @@ var isShortStory <= false
 // the statement 'I could read that in a day!', otherwise, log the statement 
 // 'Ok, maybe I could read that in a day and a half'
 
-
+if (pages < 1000) {
+    console.log('I could read that in a day!);
+} else {
+    console.log('Ok, maybe I could read that in a day and a half');
+}
 
 // Express the following in code: If the variable "isFavorite" is true,
 // log the statement 'My favorite book is [title]!'. Otherwise, log the
 // statement 'I recently read the [title] book'. In either case, the value stored in
 // the "title" variable should be included in the logged statement.
 
-
+if (isFavorite === true) {
+     console.log(`My favorite book is ${title}!`)
+} else {
+    console.log(`I recently read the ${title} book.`)
+}
 
 //------------------------- Arrays -------------------------//
 
@@ -66,6 +75,7 @@ var isShortStory <= false
 // Create a new variable "books" and assign it to an Array of 5 different
 // book titles, represented by their names as Strings.
 
+var books = ['Lessons in Chemistry', 'Cats Run the World', 'Am I Okay?', 'Coding Nightmares', 'Pigeons Unite'']
 
 // Write the code to access the 3rd element of the Array, using bracket
 // notation.
