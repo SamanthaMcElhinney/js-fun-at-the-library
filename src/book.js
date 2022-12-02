@@ -12,9 +12,8 @@ function buildMainCharacter(name, age, pronouns) {
 }
 
 function saveReview (review, array) {
-  array.push(review)
-    if (array.indexOf(review)) {
-      return review
+    if (array.includes(review) === false) {
+      array.push(review)
     }
 }
 
@@ -22,18 +21,18 @@ function calculatePageCount(title) {
   return title.length * 20
 }
 
-function writeBook(title, mainCharacter,genre) {
-  var book : {
+function writeBook(title, mainCharacter, genre) {
+  var book = {
     title: title,
     mainCharacter: mainCharacter,
-    pageCount: calculatePageCount (title),
+    pageCount: calculatePageCount(title),
     genre: genre
   }
 
   return book
-  
+}
 function editBook() {
-
+  return calculatePageCount(title) / 4 * 3
 }
 
 module.exports = {
@@ -42,5 +41,5 @@ module.exports = {
   saveReview,
   calculatePageCount,
   writeBook,
-  //editBook
+  editBook
 }
