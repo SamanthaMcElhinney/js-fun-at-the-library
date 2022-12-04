@@ -1,6 +1,6 @@
 function createTitle(newTitle) {
   return (`The ${newTitle}` )
-  }
+}
 
 function buildMainCharacter(name, age, pronouns) {
   var mainCharacter1 = {
