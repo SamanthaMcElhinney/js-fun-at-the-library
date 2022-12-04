@@ -31,9 +31,10 @@ function writeBook(title, mainCharacter, genre) {
 
   return book
 }
+
 function editBook(title) {
-    return title.pageCount = title.pageCount * 0.75
-  }
+  return title.pageCount = title.pageCount * 0.75
+}
 
 
 
