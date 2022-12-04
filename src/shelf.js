@@ -8,7 +8,7 @@ function unshelfBook(book, shelf) {
   for (var i = 0; i < shelf.length; i++) {
     if (shelf[i].title === book) {
       return shelf.splice(i, 1);
-    }
+    }  
   }
 }
 
