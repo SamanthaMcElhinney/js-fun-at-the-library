@@ -10,18 +10,15 @@ function addBook(library, book) {
   library.shelves[book.genre].push(book)
 }
 
-function checkoutBook(library, book, genre) {
-   unshelfBook(book, shelf) {
-  function unshelfBook(book, shelf) {
-  for (var i = 0; i < shelf.length; i++) {
-    if (shelf[i].title === book) {
-      return shelf.splice(i, 1);
-    }
-  } 
-  }
-  `You have now checked out ${book}`;
+function checkoutBook(library, title, genre) {
+  for (var i = 0; i < library.shelves[genre].length; i++) {
+    if (library.shelves[genre][i].title === title) {
+      library.shelves[genre].splice(i, 1);
+      return `You have now checked out ${title} from the ${library.name}`;
+    } 
+  }  
+  return `Sorry, there are currently no copies of ${title} available at the ${library.name}`;
 }
-
   module.exports = {
   createLibrary,
   addBook,
